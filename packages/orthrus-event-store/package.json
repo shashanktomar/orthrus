@@ -1,6 +1,6 @@
 {
   "name": "@orthrus/event-store",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A event-store implementation for orthrus project",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
