@@ -1,0 +1,10 @@
+{
+  // @see https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions
+  "recommendations": [
+    "eg2.tslint",
+    "esbenp.prettier-vscode",
+    "tberman.json-schema-validator",
+    "quicktype.quicktype",
+    "orta.vscode-jest"
+  ]
+}

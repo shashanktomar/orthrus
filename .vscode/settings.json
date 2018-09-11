@@ -1,0 +1,9 @@
+{
+  "editor.formatOnPaste": true,
+  "javascript.format.enable": true,
+  "typescript.format.enable": true,
+  "files.exclude": {
+    "node_modules": true,
+    "**/*/node_modules": true
+  }
+}

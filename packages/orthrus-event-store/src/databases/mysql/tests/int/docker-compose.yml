@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  mysql:
+    container_name: orthrus-mysql-testing
+    image: mysql:5.7
+    expose:
+      - '3306'
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_DATABASE: orthrus-event-store-test
+      MYSQL_ROOT_PASSWORD: orthrus
+      MYSQL_USER: orthrus
+      MYSQL_PASSWORD: orthrus

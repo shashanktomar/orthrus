@@ -1,0 +1,21 @@
+{
+  "name": "@orthrus/event-store",
+  "version": "0.1.0",
+  "description": "A event-store implementation for orthrus project",
+  "main": "index.js",
+  "author": "shashank <shashank004@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tslint 'src/**/*.ts'",
+    "test": "jest unit --colors",
+    "test:int": "jest int --colors --runInBand"
+  },
+  "dependencies": {
+    "knex": "^0.15.2",
+    "mysql": "^2.16.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {}
+}
