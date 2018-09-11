@@ -16,7 +16,7 @@ describe('Mysql event-store test', () => {
   }
 
   const tableName = `${config.streamName}-${config.streamVersion}`
-  let eventStore: IEventStore = null
+  let eventStore: IEventStore = new EventStore(config)
   let initialTableName
 
   beforeAll(() => {

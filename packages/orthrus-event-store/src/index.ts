@@ -1,5 +1,4 @@
 import { v4 as uuid } from 'uuid'
-import InMemoryDb from './databases/in-memory'
 import MySqlEventsDb from './databases/mysql'
 import {
   EventsDb,
@@ -21,11 +20,9 @@ export default class EventStore implements IEventStore {
     this.config = config
     this.eventDecorator = decorateEvents(config)
     switch (config.type) {
-      case 'in-memory':
-        this.eventsDb = new InMemoryDb(config)
-        break
       case 'mysql':
         this.eventsDb = new MySqlEventsDb(config)
+        break
     }
   }
 

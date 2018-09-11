@@ -15,8 +15,8 @@ describe('Mysql event-store test', () => {
   }
 
   const tableName = `${config.streamName}-${config.streamVersion}`
-  let eventsDb: EventsDb = null
-  let initialTableName
+  let eventsDb: EventsDb = new MySqlEventsDb(config)
+  let initialTableName: string | undefined
 
   beforeAll(() => {
     initialTableName = process.env.ORTHRUS_EVENT_STORE_TABLE
