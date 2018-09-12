@@ -1,5 +1,5 @@
 {
-  "name": "@orthrus/event-store",
+  "name": "@orthrusjs/event-store",
   "version": "0.1.3",
   "description": "A event-store implementation for orthrus project",
   "main": "lib/index.js",
@@ -18,5 +18,9 @@
     "knex": "^0.15.2",
     "mysql": "^2.16.0",
     "uuid": "^3.3.2"
+  },
+  "gitHead": "f20c0dfc158c0432ad1c92c4d20c789b09035496",
+  "publishConfig": {
+    "access": "public"
   }
 }
